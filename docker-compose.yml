@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:5.0
+    container_name: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+  app:
+    build:
+      context: .
+    container_name: nest-app
+    ports:
+      - '3000:3000'
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/brio
+    depends_on:
+      - mongo
+
+  test:
+    build:
+      context: .
+    container_name: nest-app-test
+    command: npm run test:e2e
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/nest-test
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:

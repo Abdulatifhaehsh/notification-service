@@ -6,7 +6,6 @@ import { EmailChannel } from '../src/notification/channels/email.channel';
 import { CompanyService } from '../src/notification/services/company.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-// import { Notification } from '../src/notification/notification';
 
 
 describe('Notification', () => {

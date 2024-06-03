@@ -1,5 +1,4 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import mongoose, { Document } from 'mongoose';
 
 
 
@@ -23,4 +22,3 @@ export class Notification {
 }
 
 export const NotificationSchema = SchemaFactory.createForClass(Notification);
-// export const NotificationModel = mongoose.model<NotificationDocument>('Notification', NotificationSchema);

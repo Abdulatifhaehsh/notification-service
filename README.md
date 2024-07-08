@@ -74,5 +74,6 @@ $ docker-compose run test
 
 ## Stay in touch
 
-- Author - [Abdulatif Hashash](https://www.linkedin.com/in/abdallatif-hashash-8aa594202/)
+- Author - [Abdulatif Hashash](https://www.linkedin.com/in/abdulatif-hashash-8aa594202/)
+- Portfolio - [website](https://abdulatifhashash.site/)
 
